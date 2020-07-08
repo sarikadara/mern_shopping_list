@@ -20,7 +20,7 @@ class AppNavbar extends Component {
          isOpen: !this.state.isOpen
      });
  }
- render() {
+  render() {
     return (
      <div>
          <Navbar color="dark" dark expand="sm" className="mb-5">
@@ -36,9 +36,9 @@ class AppNavbar extends Component {
                          </NavItem>
                      </Nav>
                  </Collapse>
-             </Container>
+            </Container>
 
-         </Navbar>
+        </Navbar>
      </div>
     );
  }
