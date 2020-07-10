@@ -50,7 +50,7 @@ export const register = ({ name, email, password }) => (
   const body = JSON.stringify({ name, email, password });
 
   axios
-    .post('/api/auth/register', body, config)
+    .post('/api/auth', body, config)
     .then(res =>
       dispatch({
         type: REGISTER_SUCCESS,
@@ -82,7 +82,7 @@ export const login = ({ email, password }) => (
   const body = JSON.stringify({ email, password });
 
   axios
-    .post('/api/auth/login', body, config)
+    .post('/api/auth', body, config)
     .then(res =>
       dispatch({
         type: LOGIN_SUCCESS,
