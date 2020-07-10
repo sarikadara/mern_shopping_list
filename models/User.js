@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 //crate schema
-const UserSchema =  new Schema({
+const UserSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -10,7 +10,7 @@ const UserSchema =  new Schema({
     email: {
         type: String,
         required: true,
-        unique:true
+        unique: true
     },
     password: {
         type: String,
@@ -21,5 +21,5 @@ const UserSchema =  new Schema({
         default: Date.now
     }
 });
-module.exports = Item = mongoose.model('user', UserSchema);
+module.exports = Item = mongoose.model('User', UserSchema);
 
